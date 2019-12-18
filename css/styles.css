@@ -45,3 +45,6 @@
 .container{
     background-color:lightgreen;
 }
+.jumbotron{font-style: italic;
+font-size: xx-large;
+text-align: center;}
