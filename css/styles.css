@@ -1,0 +1,44 @@
+#guest {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 25%;
+    display: block;
+    width: 40%;
+    height: 40px;
+}
+
+#name {
+    margin-left: auto;
+    margin-right: auto;
+    width: 40%;
+    display: block;
+    height: 40px;
+}
+
+#email {
+    margin-left: auto;
+    margin-right: auto;
+    width: 40%;
+    display: block;
+    height: 40px;
+}
+
+#password {
+    margin-left: auto;
+    margin-right: auto;
+    width: 40%;
+    display: block;
+    height: 40px;
+}
+
+#signup {
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    width: 40%;
+    height: 40px;
+}
+
+#onesha {
+    display: none;
+}
