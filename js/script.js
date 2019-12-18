@@ -11,5 +11,17 @@
         $("#onesha").toggle()
     })
 
+    var modal = document.getElementById('onesha')
+    Window.onclick = function(event){
+        if(event.target == modal){
+            modal.style.display="none"
+        }
+    }
+
 
 }); 
+
+
+
+
+
