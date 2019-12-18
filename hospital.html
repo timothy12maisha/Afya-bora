@@ -18,11 +18,10 @@
  
   <div class="container">
   <div class="col-12">
-    <form id="form" >
+    <form id="form">
       
-        <button type="button" class="btn btn-info" value="Hospital" id="hospital" onclick="window.location.href='hospital.html'" >Hospital</button>
         
-      <button type="button" class="btn btn-primary"  value="Guest" id="guest">Guest</button>
+      <button type="button" class="btn btn-primary"  value="Guest" id="guest">Hospital</button>
       <br>
       <div id="onesha">
       <input type="name" placeholder="Enter Name" id="name" size="34"autocomplete="on"  required>
@@ -32,8 +31,9 @@
       <input type="password" placeholder="Enter Password" id="password" maxlength="12"  required>
       <br>
       <input type="submit" value="signup" id="signup">
+      <button onclick="goback()">Go back</button>
       </div>
-      
+    
 
     </form>
   </div>
@@ -41,7 +41,12 @@
 
   <script async src="https://code.jquery.com/jquery-3.4.1.js" integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
     crossorigin="anonymous"></script>
-  <script async src="js/script.js"></script>
+  <script async src="js/script.js">
+   function goback(){
+        Window.history.back()
+
+    }
+</script>
   </div>
 </body>
 
