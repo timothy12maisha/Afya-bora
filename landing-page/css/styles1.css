@@ -1,0 +1,103 @@
+* {
+    box-sizing: border-box;
+  }
+  
+  body {
+    /* background-color: #f1f1f1; */
+    background-image: url(../images/20\ form\ backgrounds\ wallpaper\ \ 7.jpg);
+  }
+  
+  #regForm {
+    background-image: url(../images/380171_1_800.jpeg);
+    margin: 100px auto;
+    font-family: Raleway;
+    padding: 40px;
+    width: 60%;
+    min-width: 300px;
+    overflow: hidden;
+    background-repeat: no-repeat;
+    box-shadow: black 3px 3px 10px;
+  }
+  
+  h1 {
+    text-align: center;
+    font-family: 'Poiret One', cursive;  
+  }
+  
+  input {
+    padding: 10px;
+    width: 100%;
+    font-size: 17px;
+    font-family: Raleway;
+    border: 1px solid #aaaaaa;
+  }
+  
+  /* Mark input boxes that gets an error on validation: */
+  input.invalid {
+    background-color: #ffdddd;
+  }
+  
+  /* Hide all steps by default: */
+  .tab {
+    display: none;
+  }
+  
+  button {
+    background-color: blue;
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-size: 17px;
+    cursor: pointer;
+    font-family: 'Poiret One', cursive;
+  }
+  
+  button:hover {
+    opacity: 0.8;
+  }
+  
+  #prevBtn {
+    background-color: blue;
+  }
+  
+  /* Make circles that indicate the steps of the form: */
+  .step {
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbbbbb;
+    border: none;  
+    border-radius: 50%;
+    display: inline-block;
+    opacity: 0.5;
+  }
+  
+  .step.active {
+    opacity: 1;
+  }
+  
+  /* Mark the steps that are finished and valid: */
+  .step.finish {
+    background-color: blue;
+    font-family: 'Poiret One', cursive;
+    font-size: 20px;
+    
+  }
+
+  .name {
+    box-sizing: border-box;
+    border: 2px solid whitesmoke;
+    border-radius: 4px;
+    background-color: transparent;
+}
+::-webkit-input-placeholder {
+  color: whitesmoke !important;
+  font-family: 'Poiret One', cursive;
+  font-size: 20px;
+}
+#logo{
+  margin-left: 330px;
+  /* margin-top: 1px; */
+  margin-bottom: -120px;
+}
