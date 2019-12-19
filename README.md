@@ -1,4 +1,4 @@
-# Akan name calculator Website
+# AfyaBora Website
 
 ## Author
 
