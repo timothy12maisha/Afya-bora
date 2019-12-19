@@ -52,6 +52,14 @@
     display: block;
     width: 40%;
     height: 40px;
+    
+}
+#signin{
+  margin-left: auto;
+    margin-right: auto;
+    display: block;
+    width: 40%;
+    height: 40px;
 }
 #hospital{
     margin-top: 1%;
@@ -71,6 +79,7 @@ body {
     /* background-color: #f1f1f1; */
     background-image: url(../images/20\ form\ backgrounds\ wallpaper\ \ 7.jpg);
     background-repeat: no-repeat;
+   
 
     
   }
@@ -111,9 +120,11 @@ body {
 }
 #form{
     padding-top: 5px;
+    margin-bottom: 30px;
 }
 button:hover {
     opacity: 0.8;
+    background-color: blue;
   }
   #back {
     background-color: blue;
@@ -168,7 +179,7 @@ button:hover {
     bottom:0;
     left:0;
       width: 100%;
-      /* height: 50em; */
+      height: -50px;
       overflow:hidden;
       margin:0 auto;
     -webkit-transition: all 1s ease;
@@ -178,33 +189,18 @@ button:hover {
       transition: all 1s ease;
     z-index:999;
   }
-  /* .footer:hover {
-    -webkit-transition: all 1s ease;
-      -moz-transition: all 1s ease;
-      -o-transition: all 1s ease;
-      -ms-transition: all 1s ease;
-      transition: all 1s ease;
-    height: 1cm;
-  } */
-  .footer #container{
+ 
+  /* .footer #container{
     margin-top:20px;
     width:100%;
     height:100%;
-    
     top:0;
     left:0;
     background: #3A3A3A;
-  }
-  .footer #cont{
-
-    top:-45px;
-    right:190px;
-    width:100%;
-    height:60%;
-    margin-left: 20px;
-  }
+  } */
+  
   .footer_center{
-    text-align:center;
+    text-align:bottom;
   }
   .footer-distributed{
     background: #666;
@@ -212,8 +208,8 @@ button:hover {
     box-sizing: border-box;
     width: 100%;
     text-align: left;
-    font: bold 16px sans-serif;
-    padding: 100px 50px;
+    font-family: 'Poiret One', cursive;
+    padding: -100px 50px;
   }
   .footer-distributed .footer-left,
   .footer-distributed .footer-center,
@@ -227,12 +223,12 @@ button:hover {
   }
   /*the company logo*/
   .footer-distributed .footer-left{
-    color: aqua;
+    color: palevioletred;
     font: normal 36px 'open Sans' cursive;
     margin: 0;
   }
   .footer-distributed h3 span{
-    color:  lightseagreen;
+    color: pink;
   }
   /* Footer links */
   .footer-distributed .footer-links{
@@ -248,7 +244,7 @@ button:hover {
     color:  inherit;
   }
   .footer-distributed .footer-company-name{
-    color:  #222;
+    color: pink;
     font-size: 14px;
     font-weight: normal;
     margin: 0;
@@ -287,11 +283,12 @@ button:hover {
     line-height:2;
   }
   .footer-distributed .footer-center p a{
-    color:  lightseagreen;
+    color: pink;
     text-decoration: none;;
+    font-family: 'Poiret One', cursive;
   }
   .footer-distributed .footer-links a:before {
-    content: "|";
+    /* content: "|"; */
     font-weight:300;
     font-size: 20px;
     left: 0;
@@ -320,13 +317,11 @@ button:hover {
     font-weight: bold;
     /* margin-bottom: 20px; */
   }
-  .footer-icons{
-    margin-top: 25px;
-    }
-  @media (max-width: 880px) {
+  
+  /* @media (max-width: 880px) {
     .footer-distributed{
       font: bold 14px sans-serif;
-    }
+    } */
     .footer-distributed .footer-left,
     .footer-distributed .footer-center,
     .footer-distributed .footer-right{
@@ -341,5 +336,7 @@ button:hover {
   }
   .footer{
       height: 500px;
+      font-family: 'Poiret One', cursive;
+      overflow: none;
   }
   
