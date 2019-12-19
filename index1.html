@@ -1,28 +1,33 @@
 <!DOCTYPE html>
 <html>
+  <head>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
 <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
 <link rel="stylesheet" href="css/styles1.css">
 <link href="https://fonts.googleapis.com/css?family=Dancing+Script|Pacifico&display=swap" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css?family=Poiret+One&display=swap" rel="stylesheet">
-
-
-
+</head>
 <body>
-<img src="images/LOGO.png" width="500px" height="300px" id="logo">
-  <form id="regForm" action="index.html">
+  <img src="images/LOGO.png" width="500px" height="300px" id="logo">
+  <form id="regForm" action="registration.php" method="POST">
     <h1>REGISTER!</h1>
-    
+
     <!-- One "tab" for each step in the form: -->
     <div class="tab">Name:
-      <p><input placeholder="First name..." oninput="this.className = ''" class="name" name="fname" required></p>
-      <p><input placeholder="Last name..." oninput="this.className = ''" class="name" name="lname" required></p>
+      <p><input placeholder="First name..." oninput="this.className = ''" class="name" name="fname" id="fname3" required></p>
+      <p><input placeholder="Last name..." oninput="this.className = ''" class="name" name="lname" id="lname3" required></p>
     </div>
+
+    <div class="tab">Contact Information:
+      <p><input placeholder="E-mail..." oninput="this.className = ''" class="name" name="email" id="email3" required></p>
+      <p><input placeholder="Phone..." oninput="this.className = ''" class="name" name="phone" id="phone3" required></p>
+    </div>
+
     <div class="tab">Birthday:
-      <p><input placeholder="dd" oninput="this.className = ''" class="name" name="dd" required></p>
-      <p><input placeholder="mm" oninput="this.className = ''" class="name" name="nn" required></p>
-      <p><input placeholder="yyyy" oninput="this.className = ''" class="name" name="yyyy" required></p>
+      <p><input placeholder="dd" oninput="this.className = ''" class="name" name="dd" id="day3" required></p>
+      <p><input placeholder="mm" oninput="this.className = ''" class="name" name="nn" id="month3" required></p>
+      <p><input placeholder="yyyy" oninput="this.className = ''" class="name" name="yyyy" id="year3" required></p>
     </div>
     <div class="tab">Contact Information:
       <p><input placeholder="E-mail..." oninput="this.className = ''" class="name" name="email"required></p>
@@ -34,8 +39,9 @@
     </div>
     
     <div class="tab">Login Info:
-      <p><input placeholder="Username..." oninput="this.className = ''" class="name" name="uname" required></p>
-      <p><input placeholder="Password..." oninput="this.className = ''" class="name" name="pword" type="password" required></p>
+      <p><input placeholder="Username..." oninput="this.className = ''" class="name" name="uname" id="uname3" required></p>
+      <p><input placeholder="Password..." oninput="this.className = ''" class="name" name="pword" type="password"
+          id="pword3" required></p>
     </div>
     <div style="overflow:auto;">
       <div style="float:right;">
@@ -73,6 +79,7 @@
       //... and run a function that will display the correct step indicator:
       fixStepIndicator(n)
     }
+
     function nextPrev(n) {
       // This function will figure out which tab to display
       var x = document.getElementsByClassName("tab");
@@ -93,6 +100,7 @@
       // Otherwise, display the correct tab:
       showTab(currentTab);
     }
+
     function validateForm() {
       // This function deals with validation of the form fields
       var x, y, i, valid = true;
@@ -114,6 +122,7 @@
       }
       return valid; // return the valid status
     }
+
     function fixStepIndicator(n) {
       // This function removes the "active" class of all steps...
       var i, x = document.getElementsByClassName("step");
@@ -124,7 +133,7 @@
       x[n].className += " active";
     }
   </script>
-  
+
 </body>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 <script async src="js/script.js"></script>
